@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image: url("./pexels-fwstudio-164005.jpg");
+    background-size: cover;
+}
+
+.container{
+    border-radius: 13px;
+    background-color: white;
+    padding: 40px 30px ;
+    background-image: url("./bg.jpg");
+    box-shadow: 0 0 5px 4px rgba(0,0,0, 0.2);
+}
+
+.t-white{
+    color: #fff;
+}
+
+.counter-head{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.counterValue{
+    width: 100%;
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px 4px rgba(255,255,255,0.2);
+}
+
+.control-btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-btns button{
+    cursor: pointer;
+    padding: 8px 10px;
+    width: 130px;
+    border-radius: 4px;
+    border: none;
+
+
+}
+
+.step-size{
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="number"]{
+    width: 50px;
+    padding: 5px;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 100%;
+    }
+    body{
+        padding: 20px;
+    }
+}

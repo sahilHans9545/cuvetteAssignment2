@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="counter-head">Cuvette Counter</h3>
+        <div>
+            <input type="text" readonly value="0" class="counterValue">
+            <div class="control-btns">
+                <button id="increment">Increment</button>
+                <button id="decrement">Decrement</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="step-size">
+                step size :
+                <input type="number" value="1">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const counterValue = document.querySelector(".counterValue");
+        const stepSize = document.querySelector(".step-size input");
+        increment.addEventListener("click", () => {
+            let size = stepSize.value;
+            if (size === NaN) {
+                counterValue.value = parseInt(counterValue.value) + 1;
+            }
+            else {
+                counterValue.value = parseInt(counterValue.value) + parseInt(size);
+            }
+
+        })
+
+        decrement.addEventListener("click", () => {
+            let size = stepSize.value;
+            if (size === NaN) {
+                counterValue.value = parseInt(counterValue.value) - 1;
+            }
+            else {
+                counterValue.value = parseInt(counterValue.value) - parseInt(size);
+            }
+        })
+
+        reset.addEventListener("click", () => {
+            counterValue.value = 0;
+        })
+    </script>
+</body>
+
+</html>
